@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>REGISTRATION</title>
+    <!--  Linking the external style sheet log.css  -->
+    <link rel="stylesheet" href="./css/log.css">
+    <script src="js/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      .registerbut{
+        position: relative;
+        background-color: red;
+        border: none;
+        font-size: 28px;
+        color: black;
+        padding: 20px;
+        width: 200px;
+        text-align: center;
+        transition-duration: 0.4s;
+        text-decoration: none;
+        overflow: hidden;
+        cursor: pointer;
+      }
+      
+      .registerbut:after {
+        content: "";
+        background: #f1f1f1;
+        display: block;
+        position: absolute;
+        padding-top: 300%;
+        padding-left: 350%;
+        margin-left: -20px !important;
+        margin-top: -120%;
+        opacity: 0;
+        transition: all 0.8s
+      }
+      
+      .registerbut:active:after {
+        padding: 0;
+        margin: 0;
+        opacity: 1;
+        transition: 0s
+      }
+      body{
+        background-image: url(./images/final.png);
+      }
+      </style>
+    
+  </head>
+
+  <body>
+    <!-- Creating buttons -->
+   <div style="display:block;">
+    <button  class="logbut registerbut"  style="margin-right: 200px;">LOGIN</button>
+    <a href="index.html"><button class="registerbut"  style="margin-right: 200px;">HOME</button></a>
+    <button class="signbut registerbut" style="margin-right: 100px;">SIGNUP</button>
+
+   </div>
+   <!-- Creating forms -->
+    <div style="display: flex;">
+    <div class="wrapper logshow" style="display: none;">
+      <div class="title-text">
+        <div class="title login">Login</div>
+      </div>
+      <div class="form-container">
+        <div class="form-inner">
+          <form class="login" method="get" action="index.html">
+       
+            <div class="field">
+              <input type="text" placeholder="Email Address" id="Username" onkeyup="logs1()" onblur="logs11()"   required>
+              <span id="logsemail"></span>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" id="Password" onkeyup="logs2()" onblur="logs22()"   required>
+              <span id="logspass"></span>
+            </div>
+            <br>
+            <div class="pass-link"><a href="#">Forgot password?</a></div>
+        
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Login" onclick="logs3()">
+            </div>  
+            <a href="https://www.facebook.com"><img src="./images/1facebook.png" style="height: 50px;width: 50px;">Continue with Facebook</a><br>
+            <a href="https://www.facebook.com"><img src="./images/1instagram.png" style="height: 50px;width: 50px;">Continue with Instagram</a><br>
+            <a href="https://www.facebook.com"><img src="./images/1twitter.png" style="height: 50px;width: 50px;">Continue with Twitter</a>
+
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Signup Form -->
+    <div class="wrapper signshow" style="display: none;">
+      <div class="title-text">
+        <div class="title signup">Signup </div>
+      </div>
+      <div class="form-container">
+        <div class="form-inner">
+          <form  class="signup" method="get" action="index.html">
+            <div class="field">
+              <input type="text" placeholder="First Name" id="fname" onkeyup="signs1()" onblur="signs11()" required>
+              <span id="signfname"></span>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Last Name" id="lname" onkeyup="signs2()" onblur="signs22()" required>
+              <span id="signlname"></span>
+            </div>
+            <div class="field">
+              <input type="text" placeholder="Email Address" id="username" onkeyup="signs3()" onblur="signs33()" required>
+              <span id="signemail"></span>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Password" id="pass" onkeyup="signs4()" onblur="signs44()" required>
+              <span id="signpass"></span>
+            </div>
+            <div class="field">
+              <input type="password" placeholder="Confirm password" id="C_password" onkeyup="signs5()" onblur="signs55()" required>
+              <span id="signcpass"></span>
+            </div>
+            <div class="field btn">
+              <div class="btn-layer"></div>
+              <input type="submit" value="Signup" onclick="signs6()"></a>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+<script src="./js/register.js"></script>
+
+
+
+  </body>
+</html>

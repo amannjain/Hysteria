@@ -1,0 +1,110 @@
+<!--This page is for the Team section of the page-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TEAM</title>
+    <!--  Linking the external style sheet style.css  -->
+    <link rel="stylesheet" href="./css/style.css">
+    <!--  Linking the Google font APIs- Poppins, Lato  -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    
+</head>
+<body>
+    <!--  Binding the entire body of the page using the class  "site-main-wrapper" -->
+    <div class="site-main-wrapper">
+        <!--Creating a header for the page that displays buttons and anchor tags, which when clicked re-direct to the
+             respective section or page.-->
+        <header>
+            <!--Creating a container to place all the tags, images, and text-->
+            <div class="container">
+                <nav id="main-nav" class="flex items-center justify-between">
+                    <div class="left flex items-center">
+                        <div class="branding">
+                            <a href="index.html"><img src="./images/logo.png" alt="College Logo" style="height: 120px; width: 120px;" ></a>
+                        </div>
+                        <div>
+                            <a href="index.html#">HOME</a>
+                            <a href="index.html#about">ABOUT</a>
+                            <a href="events.html">EVENTS</a>
+                            <a href="workshops.html">WORKSHOPS</a>
+                            <a href="index.html#sponsors">SPONSORS</a>
+                            <a href="team.html">TEAM</a>
+                            <a href="gallery.html">GALLERY</a>
+                            <a href="register.html">REGISTER</a>
+                        </div>
+        
+                    </div>
+                    <div class="right">
+                        <button onclick="document.location='index.html#contact'" class="btn btn-primary">Contact</button>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <!--Creating a section for team that has contrributed to the project 
+            using the slick carousel that slides each team-member-slide, and classes like team
+            , container,section-headding, slider, slide, slider-dots.-->
+        <section id="team" class="team">
+            <!--holding the entire team page in the class container-->
+            <div class="container">
+                <h1 class="section-heading"><span>Our</span> Team</h1>
+                <div class="slider">
+                    <div class="slide">
+                        <img src="./images/abhinav.jpg" alt="Abhinav Sardana" id="abhinav" style="height:500px;width: 1000px;">
+                        <span id="organizing" style="display: none;color:brown;font-size: 40px;">Organizing Head</span>
+                        <span>Abhinav Sardana</span>
+                        Chitkara University <br>
+                        abhinav1789.be20@chitkara.edu.in
+                    </div>
+                    <div class="slide">
+                        <img src="./images/anisha.png" alt="Anisha Patil" id="anisha"  style="height:500px;width: 1000px;">
+                        <span id="promotion" style="display: none;color:brown;font-size: 40px;">Promotion Head</span>
+                        <span>Anisha Patil</span>
+                        Chitkara University <br>
+                        anisha1821.be20@chitkara.edu.in
+                    </div>
+                    <div class="slide">
+                        <img src="./images/pratham.jpg" alt="Pratham Verma" id="pratham" style="height:500px;width: 1000px;">
+                        <span id="technical" style="display: none;color:brown;font-size: 40px;">Technical Head</span>
+                        <span>Pratham Verma</span>
+                        Chitkara University <br>
+                        pratham1661.be20@chitkara.edu.in
+                    </div>
+                    <div class="slide">
+                        <img src="./images/aman.png" alt="Aman Jain" id="aman" style="height:500px;width: 1000px;">
+                        <span id="cultural" style="display: none;color:brown;font-size: 40px;">Cultural Head</span>
+                        <span>Aman Jain</span>
+                        Chitkara University <br>
+                        aman1808.be20@chitkara.edu.in
+                    </div>
+                </div>
+                <div class="slider-dots" class="tryi"></div>
+            </div>
+        </section>
+        <!--Creating a footer to the page that displays the fest-logo, social media icons(clickable), and copyrights-->
+        <footer>
+            <img class="footer-logo" src="./images/logo.png" alt="">
+            <div class="footer-socials">
+                <a href="https://www.facebook.com/Hysteria-2021-107271091543298"><img src="./images/1facebook.png" alt=""></a>
+                <a href="https://twitter.com/2021Hysteria"><img src="./images/1twitter.png" alt=""></a>
+                <a href="https://www.instagram.com/hysteria2021fest/"><img src="./images/1instagram.png" alt=""></a>
+                 <a href="https://www.youtube.com/channel/UC8X-iv8DfGA1-6fxOCEZFTg"><img src="./images/1youtube-play.png" alt=""></a>
+                <a href="mailto:2021Hysteria@gmail.com"><img src="./images/gmail.png" alt=""></a>
+            </div>
+            <div class="copyright">
+                HYSTERIA 2021<br>
+            All Rights Reserved by Team Tech Wizards
+            </div>
+        </footer>
+    </div>
+    <!--Linking the JavaScript sources for slick carousel-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="./js/app.js"></script> 
+</body>
+</html>
